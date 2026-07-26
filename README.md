@@ -1,35 +1,132 @@
 # self_reference_shared_past
-supporting repo for Incompleteness as Expansion: A Self-Reference Mechanism for Shared Reality, the Arrow of Time, and the Open Future
 
-ncompleteness as Expansion:
-A Self-Reference Mechanism for Shared Reality,
-the Arrow of Time, and the Open Future
-Jason Merwin
-June 2026
-Abstract
-We exhibit a minimal combinatorial model in which a single structural property—second-
-order self-reference—produces three features usually treated separately: an intrinsic arrow of
-time; a sharp distinction between a closed (“block”) and an open future; and the stabilization
-of a shared, observer-independent reality. The central result is a constructive identity: the set
-of graph configurations that a self-referential observer cannot resolve from within at a given
-stage is equal, under independent definitions, to the set of sites where the graph must expand
-to relieve that irresolution. Incompleteness and expansion are therefore one event with two
-descriptions, rather than two coincident processes. Iterating the resolution rule makes time
-a generative process—completing the incomplete seeds new incompleteness—and introduces a
-control parameter, the branching ratio of the abstraction, whose critical value separates a sub-
-critical phase in which paradoxes exhaust and time halts from a super-critical phase in which
-they self-sustain and the open future is guaranteed; in the generic toy sweep we locate this
-critical point at βc ≈ 1.08, near the unit replacement threshold expected on heuristic grounds.
-Finally, we show that shared reality emerges not at the contested frontier but one step behind
-it: the nodes that expansion has resolved are frozen against the common history and become
-observer-independent, so that independent observers who disagree entirely about the unresolved
-present nonetheless agree completely, and stably, on the resolved past. As a final pre-paper
-control on the motivating registry, we test whether a structurally sterile multiplicity-1 S-mode
-is the dynamical source of the mechanism. It is not singled out by the present dynamics: sterile-
-basin capture and matched nonsterile universal-S controls are indistinguishable, while a strong
-adjacent-basin damping rule shifts the registry threshold from βc ≈ 0.906 to βc ≈ 1.820 for both.
-The sterile mode is therefore a canonical representative of a universal-basin capture mode, not
-yet a multiplicity-specific cause. The model is deliberately abstract: it operates on self-reference
-as a structural property and makes no claim about consciousness, quantum mechanics, or any
-specific physical realization. We discuss its status as a candidate mechanism whose realization
-in a richer relational substrate remains open
+Code accompanying **"Incompleteness as Expansion: A Self-Reference Mechanism for Shared
+Reality, the Arrow of Time, and the Open Future"**, Jason Merwin,
+[ai.viXra:2606.0082](https://ai.vixra.org/abs/2606.0082), submitted 2026-06-30 05:52:42 UTC.
+
+---
+
+## Artifacts
+
+| file | paper section | implements |
+|---|---|---|
+| [`unified_selfreference_mechanism.ipynb`](unified_selfreference_mechanism.ipynb) | §§2–4, Table 1 | the observer, the resolvability test, the independent definitions of `A` and `B`, the generative stepping rule, and the β-sweep. Verifies the diagonal lemma directly (exhibits the 2-cycle), checks `A = B` across independent random instances (12/12 exact, with persistent nonempty incompleteness), and reproduces the survival sweep of Table 1 from fixed seeds. |
+| [`shared_past_mechanism.ipynb`](shared_past_mechanism.ipynb) | §6 | multi-observer shared-history dynamics; measures agreement separately on the contested frontier and the resolved past, bucketed by freeze generation, and exhibits the shared core under shared-history freezing. |
+| [`sterile_final_pre_paper_test.py`](sterile_final_pre_paper_test.py) | §5, Tables 2–3 | the sterile-basin control on the native DEU registry: identifies σ, constructs matched universal-S controls, runs fixed-β stress tests at β = 1.3, and reruns the refined threshold check with 64 seeds per β. |
+
+Read [`ERRATA.md`](ERRATA.md) before using `shared_past_mechanism.ipynb`. It documents a
+defect in that notebook's Cell 6 output and a K-dependence in its agreement statistic. The
+paper's own §6 wording is unaffected by the first and imprecise about the second.
+
+[`shared_past_mechanism_fixed.ipynb`](shared_past_mechanism_fixed.ipynb) is the corrected
+notebook. The original is unchanged, both on disk and in history.
+
+## Provenance
+
+**Dates are not fabricated.** Nothing in this repository has been backdated, no
+`GIT_COMMITTER_DATE` or `--date` override has been used, and no history has been rewritten.
+Every commit date is the true date of committing. Hash-locked timestamping is the
+credibility mechanism of this program; a repository that lied about its own dates would be
+worth less than no repository. The history is therefore in two parts, and the split is
+real:
+
+| | date | |
+|---|---|---|
+| repository created, `shared_past_mechanism.ipynb` uploaded | **2026-06-25** | five days **before** publication |
+| paper published | 2026-06-30 | |
+| `unified_selfreference_mechanism.ipynb` and `sterile_final_pre_paper_test.py` added | **2026-07-25** | twenty-five days **after** publication |
+| errata, corrected notebook, campaign, manifest added | 2026-07-25 | |
+
+§8 of the paper describes three artifacts and cites this repository for all of them. Only
+one was uploaded before publication. The other two were present and unchanged on the
+author's machine throughout — their filesystem timestamps still read their original
+authoring dates, 2026-06-12 and 2026-06-22 — but they were not committed here until
+2026-07-25. For that interval the citation resolved to an incomplete repository. That is
+stated rather than concealed.
+
+**The artifacts are the as-published files.** All three were verified byte-identical to the
+working copies from which the paper's numbers were taken, before and after commit. Stored
+execution outputs are intact in both notebooks. No reconstruction was required and none was
+performed:
+
+```
+c6406300fcb0d7e455ca4172cdc21dd9  shared_past_mechanism.ipynb
+46333078ea79e71b1aeae0c598af9101  unified_selfreference_mechanism.ipynb
+c6d2182ead2907486adb14502eda3f72  sterile_final_pre_paper_test.py
+```
+
+The `shared_past_mechanism.ipynb` digest is of the file as uploaded on 2026-06-25; it was
+checked against the working copy and matches, and the file has not been modified since.
+
+A later campaign (below) grafted notebook 1's resolvability predicate onto notebook 2's
+observer and added self-weight plumbing. It did so in a separate engine module and left
+every notebook untouched.
+
+`.gitattributes` sets `* -text` so end-of-line conversion cannot silently alter these files
+on checkout and invalidate the digests above.
+
+The README preceding this one held an earlier draft of the abstract than the one published
+on viXra — it describes the sterile-basin result as the closing control, where the published
+abstract instead closes on the transfer into the DEU registry. It remains in history.
+
+## Verifying integrity
+
+[`MANIFEST.sha256`](MANIFEST.sha256) covers every committed artifact.
+
+```bash
+git clone https://github.com/jrmerwin/self_reference_shared_past.git
+cd self_reference_shared_past
+sha256sum -c MANIFEST.sha256          # GNU coreutils / Git Bash
+shasum -a 256 -c MANIFEST.sha256      # macOS
+```
+
+Regenerate with [`tools/make_manifest.sh`](tools/make_manifest.sh), which enumerates
+git-tracked files via `git ls-files`, so the manifest cannot silently omit a committed file
+or include an untracked one.
+
+## Running
+
+Python 3.12 with `numpy`, `networkx`, `scipy`, `matplotlib`, `pandas`. The notebooks were
+authored under Python 3.12.3; the campaign was run under 3.12.4 / numpy 2.4.4 /
+networkx 3.4.2.
+
+```bash
+jupyter lab unified_selfreference_mechanism.ipynb
+python sterile_final_pre_paper_test.py
+```
+
+`sterile_final_pre_paper_test.py` writes its CSV/JSON output to `OUTDIR`, set at the top of
+the file to `/mnt/data` (the sandbox path it was authored in). Change it before running.
+
+## Post-publication work
+
+[`campaigns/growth_set_objectivity/`](campaigns/growth_set_objectivity/) contains a
+pre-registered campaign, run 2026-07-25, testing whether the incompleteness set `A` is
+observer-independent as §6 treats it. It is not part of the paper. Its principal result is
+that `A` is objective exactly when `ω = w/d(v) > 1` — concordance is exactly 1.000000 over
+713,841 node-stage rows above that threshold — and observer-dependent below it, where two
+observers reach Jaccard 0.0 on the same graph. The pre-registration, preflight report,
+decision record, primary data table and figures are all included. See its
+[decision record](campaigns/growth_set_objectivity/decision_record.md) for what passed,
+what failed, and what could not be measured.
+
+## Not in this repository
+
+`frontier_identity_machinery_skeleton.ipynb` sits alongside these files in the author's
+working directory but is **not** part of this paper. It is a machinery-validation skeleton
+for the DEU registry's S/I/G typing, and its own header states that its typing is a
+structural proxy and that every number in it is diagnostic and carries no physical meaning.
+Including it here would misrepresent it as supporting the paper's results.
+
+## Citation
+
+```bibtex
+@misc{merwin2026incompleteness,
+  author = {Jason Merwin},
+  title  = {Incompleteness as Expansion: A Self-Reference Mechanism for Shared Reality,
+            the Arrow of Time, and the Open Future},
+  year   = {2026},
+  note   = {ai.viXra:2606.0082},
+  url    = {https://ai.vixra.org/abs/2606.0082}
+}
+```

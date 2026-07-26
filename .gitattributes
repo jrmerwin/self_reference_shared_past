@@ -1,0 +1,12 @@
+# Guarantee a byte-identical checkout of the as-published artifacts on every
+# platform.
+#
+# Without this, core.autocrlf=true (the Windows default, and the setting on the
+# machine this repo was created from) rewrites LF to CRLF on checkout. The
+# working tree would then no longer match the MD5s recorded in the commit-1
+# message, nor the SHA-256 digests in MANIFEST.sha256, and the integrity check
+# would fail for reasons that have nothing to do with the contents.
+#
+# "-text" disables all end-of-line conversion. Files are stored and checked out
+# exactly as committed.
+* -text

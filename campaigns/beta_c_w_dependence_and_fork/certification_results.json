@@ -1,0 +1,581 @@
+{
+  "certification_results": {
+    "C1": {
+      "w_default": 3,
+      "toy": {
+        "mean": 12.510416666666666,
+        "median": 12.0,
+        "max": 25,
+        "min": 1
+      },
+      "registry": {
+        "mean": 78.05839416058394,
+        "median": 73.0,
+        "max": 136,
+        "min": 73,
+        "nodes": 137,
+        "edges": 5347,
+        "sigma_degree": 136
+      },
+      "degree_ratio": 6.239471972869325,
+      "omegabar_toy_at_w3": 0.23980016652789343,
+      "omegabar_registry_at_w3": 0.03843276603703011
+    },
+    "C2": {
+      "rows": [
+        {
+          "beta": 0.6,
+          "orig_P": 0.0,
+          "variant_P": 0.0,
+          "orig_counts": 0,
+          "variant_counts": 0,
+          "paper_P": 0.0,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 0.7,
+          "orig_P": 0.0,
+          "variant_P": 0.0,
+          "orig_counts": 0,
+          "variant_counts": 0,
+          "paper_P": 0.0,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 0.8,
+          "orig_P": 0.0,
+          "variant_P": 0.0,
+          "orig_counts": 0,
+          "variant_counts": 0,
+          "paper_P": 0.0,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 0.9,
+          "orig_P": 0.08333333333333333,
+          "variant_P": 0.08333333333333333,
+          "orig_counts": 1,
+          "variant_counts": 1,
+          "paper_P": 0.08,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.0,
+          "orig_P": 0.25,
+          "variant_P": 0.25,
+          "orig_counts": 3,
+          "variant_counts": 3,
+          "paper_P": 0.17,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.1,
+          "orig_P": 0.5833333333333334,
+          "variant_P": 0.5833333333333334,
+          "orig_counts": 7,
+          "variant_counts": 7,
+          "paper_P": 0.58,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.2,
+          "orig_P": 0.75,
+          "variant_P": 0.75,
+          "orig_counts": 9,
+          "variant_counts": 9,
+          "paper_P": 0.75,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.3,
+          "orig_P": 0.8333333333333334,
+          "variant_P": 0.8333333333333334,
+          "orig_counts": 10,
+          "variant_counts": 10,
+          "paper_P": 0.92,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.4,
+          "orig_P": 0.8333333333333334,
+          "variant_P": 0.8333333333333334,
+          "orig_counts": 10,
+          "variant_counts": 10,
+          "paper_P": 0.92,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.5,
+          "orig_P": 0.9166666666666666,
+          "variant_P": 0.9166666666666666,
+          "orig_counts": 11,
+          "variant_counts": 11,
+          "paper_P": 0.92,
+          "per_seed_identical": true
+        },
+        {
+          "beta": 1.6,
+          "orig_P": 0.9166666666666666,
+          "variant_P": 0.9166666666666666,
+          "orig_counts": 11,
+          "variant_counts": 11,
+          "paper_P": 0.92,
+          "per_seed_identical": true
+        }
+      ],
+      "beta_c_orig": 1.075,
+      "beta_c_variant": 1.075,
+      "seq_identical": true,
+      "matches_paper": false,
+      "pass": false
+    }
+  },
+  "c3_results": {
+    "C3a_table2": {
+      "rows": [
+        {
+          "condition": "baseline_no_capture",
+          "P": 1.0,
+          "paper_P": 1.0,
+          "nres": 1200.0,
+          "paper_nres": 1200.0,
+          "final_A": 498.09375,
+          "paper_final_A": 498.1,
+          "match": true
+        },
+        {
+          "condition": "sigma_pinned_no_capture",
+          "P": 1.0,
+          "paper_P": 1.0,
+          "nres": 1200.0,
+          "paper_nres": 1200.0,
+          "final_A": 497.34375,
+          "paper_final_A": 497.3,
+          "match": true
+        },
+        {
+          "condition": "sigma_contact_gamma1",
+          "P": 1.0,
+          "paper_P": 1.0,
+          "nres": 1200.0,
+          "paper_nres": 1200.0,
+          "final_A": 488.8125,
+          "paper_final_A": 488.8,
+          "match": true
+        },
+        {
+          "condition": "matched_universal_contact_gamma1_rep",
+          "P": 1.0,
+          "paper_P": 1.0,
+          "nres": 1200.0,
+          "paper_nres": 1200.0,
+          "final_A": 492.46875,
+          "paper_final_A": 492.5,
+          "match": true
+        },
+        {
+          "condition": "sigma_adjacent_gamma0.5",
+          "P": 0.0,
+          "paper_P": 0.0,
+          "nres": 398.09375,
+          "paper_nres": 398.1,
+          "final_A": 0.0,
+          "paper_final_A": 0.0,
+          "match": true
+        },
+        {
+          "condition": "matched_universal_adjacent_gamma0.5_rep",
+          "P": 0.0,
+          "paper_P": 0.0,
+          "nres": 398.09375,
+          "paper_nres": 398.1,
+          "final_A": 0.0,
+          "paper_final_A": 0.0,
+          "match": true
+        }
+      ],
+      "pass": true,
+      "seeds": 32
+    },
+    "C3b_committed": {
+      "rows": [
+        {
+          "condition": "baseline_no_capture",
+          "paper": 0.906,
+          "measured": "0.811",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.9,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "sigma_pinned_no_capture",
+          "paper": 0.915,
+          "measured": "0.800",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 1.0,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "sigma_contact_gamma1",
+          "paper": 0.914,
+          "measured": "0.818",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.85,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "matched_universal_contact_gamma1_rep",
+          "paper": 0.914,
+          "measured": "0.811",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.9,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "sigma_adjacent_gamma0.5",
+          "paper": 1.82,
+          "measured": "1.757",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.0,
+            "1.1": 0.0,
+            "1.3": 0.0,
+            "1.5": 0.0,
+            "1.7": 0.3,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "matched_universal_adjacent_gamma0.5_rep",
+          "paper": 1.82,
+          "measured": "1.757",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.0,
+            "1.1": 0.0,
+            "1.3": 0.0,
+            "1.5": 0.0,
+            "1.7": 0.3,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        }
+      ],
+      "pass": false,
+      "seeds": 20,
+      "max_res": 1000
+    },
+    "C3b_caption64": {
+      "rows": [
+        {
+          "condition": "baseline_no_capture",
+          "paper": 0.906,
+          "measured": "0.997",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.03125,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "sigma_pinned_no_capture",
+          "paper": 0.915,
+          "measured": "0.993",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.0625,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "sigma_contact_gamma1",
+          "paper": 0.914,
+          "measured": "0.997",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.03125,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "matched_universal_contact_gamma1_rep",
+          "paper": 0.914,
+          "measured": "0.997",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.03125,
+            "1.1": 1.0,
+            "1.3": 1.0,
+            "1.5": 1.0,
+            "1.7": 1.0,
+            "1.9": 1.0,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "sigma_adjacent_gamma0.5",
+          "paper": 1.82,
+          "measured": "1.831",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.0,
+            "1.1": 0.0,
+            "1.3": 0.0,
+            "1.5": 0.0,
+            "1.7": 0.0,
+            "1.9": 0.765625,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        },
+        {
+          "condition": "matched_universal_adjacent_gamma0.5_rep",
+          "paper": 1.82,
+          "measured": "1.831",
+          "match": false,
+          "P_by_beta": {
+            "0.5": 0.0,
+            "0.7": 0.0,
+            "0.9": 0.0,
+            "1.1": 0.0,
+            "1.3": 0.0,
+            "1.5": 0.0,
+            "1.7": 0.0,
+            "1.9": 0.765625,
+            "2.1": 1.0,
+            "2.3": 1.0,
+            "2.6": 1.0,
+            "3.0": 1.0
+          }
+        }
+      ],
+      "pass": false,
+      "seeds": 64,
+      "max_res": 2000
+    }
+  },
+  "diag_table1": [
+    {
+      "variant": "as committed (seeds 0-11, r=0.30, settle=6)",
+      "P": {
+        "0.6": 0.0,
+        "0.7": 0.0,
+        "0.8": 0.0,
+        "0.9": 0.08333333333333333,
+        "1.0": 0.25,
+        "1.1": 0.5833333333333334,
+        "1.2": 0.75,
+        "1.3": 0.8333333333333334,
+        "1.4": 0.8333333333333334,
+        "1.5": 0.9166666666666666,
+        "1.6": 0.9166666666666666
+      },
+      "reproduces_table1": false,
+      "mismatched_betas": [
+        1.0,
+        1.3,
+        1.4
+      ],
+      "beta_c": 1.075
+    },
+    {
+      "variant": "seeds 1-12",
+      "P": {
+        "0.6": 0.0,
+        "0.7": 0.0,
+        "0.8": 0.0,
+        "0.9": 0.08333333333333333,
+        "1.0": 0.25,
+        "1.1": 0.5833333333333334,
+        "1.2": 0.75,
+        "1.3": 0.8333333333333334,
+        "1.4": 0.8333333333333334,
+        "1.5": 0.9166666666666666,
+        "1.6": 0.9166666666666666
+      },
+      "reproduces_table1": false,
+      "mismatched_betas": [
+        1.0,
+        1.3,
+        1.4
+      ],
+      "beta_c": 1.075
+    },
+    {
+      "variant": "radius 0.32 (build's own default)",
+      "P": {
+        "0.6": 0.0,
+        "0.7": 0.0,
+        "0.8": 0.0,
+        "0.9": 0.16666666666666666,
+        "1.0": 0.16666666666666666,
+        "1.1": 0.5,
+        "1.2": 0.5833333333333334,
+        "1.3": 0.5833333333333334,
+        "1.4": 0.6666666666666666,
+        "1.5": 0.75,
+        "1.6": 0.75
+      },
+      "reproduces_table1": false,
+      "mismatched_betas": [
+        0.9,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6
+      ],
+      "beta_c": 1.1
+    },
+    {
+      "variant": "settle=8 (matches step_forward's settle)",
+      "P": {
+        "0.6": 0.0,
+        "0.7": 0.0,
+        "0.8": 0.0,
+        "0.9": 0.08333333333333333,
+        "1.0": 0.25,
+        "1.1": 0.5,
+        "1.2": 0.6666666666666666,
+        "1.3": 0.6666666666666666,
+        "1.4": 0.75,
+        "1.5": 0.8333333333333334,
+        "1.6": 0.8333333333333334
+      },
+      "reproduces_table1": false,
+      "mismatched_betas": [
+        1.0,
+        1.1,
+        1.2,
+        1.3,
+        1.4,
+        1.5,
+        1.6
+      ],
+      "beta_c": 1.1
+    },
+    {
+      "variant": "stage budget 25",
+      "P": {
+        "0.6": 0.0,
+        "0.7": 0.0,
+        "0.8": 0.0,
+        "0.9": 0.16666666666666666,
+        "1.0": 0.4166666666666667,
+        "1.1": 0.5833333333333334,
+        "1.2": 0.75,
+        "1.3": 0.8333333333333334,
+        "1.4": 0.8333333333333334,
+        "1.5": 0.9166666666666666,
+        "1.6": 0.9166666666666666
+      },
+      "reproduces_table1": false,
+      "mismatched_betas": [
+        0.9,
+        1.0,
+        1.3,
+        1.4
+      ],
+      "beta_c": 1.05
+    }
+  ]
+}
